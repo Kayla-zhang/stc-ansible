@@ -30,7 +30,7 @@ Now, you can verify the traffic statistics (transmitted and received packets) be
 hosts/multicast groups by starting the devices (here emulated IGMP hosts).
 
 Please refer example playbooks igmp-config.yaml in
-`Github <https://github.com/Spirent/stc-ansible/tree/master/playbooks>`_ playbook folder.
+`Github <https://github.com/Viavi-TestCenter/stc-ansible/tree/master/playbooks>`_ playbook folder.
 
 
 Create IGMP Host
@@ -39,7 +39,7 @@ Create IGMP Host
 Purpose
 ~~~~~~~
 
-Creates IGMP object(s) in the Spirent Test Center(stc) datamodel under the emulated device object(s).
+Creates IGMP object(s) in the VIAVI TestCenter(stc) datamodel under the emulated device object(s).
 During the object creation, Name and other IGMP properties can be defined.
 The name of the IGMP object will be used as a reference in order to reconfigure/modify
 any of it's properties later.
@@ -141,7 +141,7 @@ Parameters
           <div>To create IGMP version 1, 2 or 3 host blocks, use <code>IgmphostConfig</code> object.</div>
           <div><b>Required:</b> Yes.</div>
           <div><b>See Also:</b></div>
-          <div> <a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/IgmpHostConfig.htm'> IGMP object reference guide</a><div>
+          <div> <a href='http://10.126.37.131:8080/automation/html/IgmpHostConfig.htm'> IGMP object reference guide</a><div>
        </td>
      </tr>
    </table>
@@ -283,7 +283,7 @@ Synopsis
           <div>Specifies to identify the properties of IGMP objects.</div>
           <div><b>Required:</b> Yes</div>
           <div>For IGMP attributes, please refer <div>
-          <div> <a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/IgmpHostConfig.htm'> IGMP object reference guide</a><div>
+          <div> <a href='http://10.126.37.131:8080/automation/html/IgmpHostConfig.htm'> IGMP object reference guide</a><div>
        </td>
      </tr>
    </table>
@@ -392,7 +392,7 @@ Parameters
           <div>To create group memberships under IGMP v1/v2/v3 hosts, use <code>IgmpGroupMembership</code> object.
           <div><b>Required:</b> Yes.</div>
           <div><b>See Also:</b>
-          <div><a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/IgmpGroupMembership.htm'> IGMP group membership Object Reference Guide</a> </div>
+          <div><a href='http://10.126.37.131:8080/automation/html/IgmpGroupMembership.htm'> IGMP group membership Object Reference Guide</a> </div>
           <div><b>NOTES:</b></div>
             <div>1. An IPv4 Multicast group must already exist. <a href='../docs/Multicast.rst'>Multicast Group </a> section</div>
        </td>
@@ -549,7 +549,7 @@ Parameters
           <div>Specifies to identify the properties of IGMP group membership objects.</div>
           <div><b>Required:</b> Yes</div>
           <div><b>See Also:</b>
-          <div><a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/IgmpGroupMembership.htm'> IGMP group membership Object Reference Guide</a> </div>
+          <div><a href='http://10.126.37.131:8080/automation/html/IgmpGroupMembership.htm'> IGMP group membership Object Reference Guide</a> </div>
           <div><b>NOTES:</b></div>
             <div>1. An IPv4 Multicast group must already exist. <a href='../docs/Multicast.rst'>Multicast Group </a> section</div>
        </td>
@@ -629,4 +629,4 @@ Examples
              AffiliationStreamBlockLoadProfile: 
                Load: 10
 
-For more examples please check `Playbooks <https://github.com/Spirent/stc-ansible/tree/master/playbooks>`_.
+For more examples please check `Playbooks <https://github.com/Viavi-TestCenter/stc-ansible/tree/master/playbooks>`_.

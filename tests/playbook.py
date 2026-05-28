@@ -13,18 +13,11 @@ import sys, os
 import re
 from module_utils.utils import *
 from module_utils.metamodel import MetaModel
-from tests.mintaka import MintakaConfig
 
 
 class PlaybookEmulator:
 
     def __init__(self, labServer, chassis=[], ports=[], names=[]):
-
-        if labServer[0] == '@':
-            config = MintakaConfig(labServer[1:], "5")
-            labServer = config.getLabServer()
-            chassis = config.getPorts(2)
-            ports = ["//" + ip + "/1/1" for ip in chassis]
 
         self.labServer = labServer
         self.chassis = chassis
@@ -130,11 +123,20 @@ class PlaybookEmulator:
 
 
 if __name__ == "__main__":
+    import sys
 
-    emulator = PlaybookEmulator("@bdc")
+    if len(sys.argv) < 2:
+        print("Usage: python -m tests.playbook <lab-server-ip> [playbook.yaml ...]")
+        print("       (or supply --all to run every playbook in ./playbooks/)")
+        sys.exit(1)
 
-    # emulator.play("./playbooks/device-create.yaml")
+    labServer = sys.argv[1]
+    emulator = PlaybookEmulator(labServer)
 
-    for file in glob.glob("./playbooks/*.yaml"):
+    targets = sys.argv[2:]
+    if not targets or targets == ["--all"]:
+        targets = sorted(glob.glob("./playbooks/*.yaml"))
+
+    for file in targets:
         print("\n\n%s %s %s\n\n" % (Color.blue("=" * 60), Color.bold(file), Color.blue("=" * 60)))
         emulator.play(file)

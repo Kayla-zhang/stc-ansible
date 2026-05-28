@@ -1,5 +1,4 @@
 #############################################################################################
-# Purpose of this playbook is to verify the CIPCD-16791 Spirent Ansible 
 # currently does not perform error-checking to ensure that the value of 
 # traffic_pattern is appropriate for the defined endpoints
 #

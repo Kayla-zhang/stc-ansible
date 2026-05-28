@@ -18,7 +18,7 @@ a VM MAC address with a VTEP IP address.
 `STC ansible` helps to construct VTEPs, VMs, and traffic for a VXLAN test.
 
 Please refer example playbooks vxlan-bgp-evpn-config.yaml in
-`Github <https://github.com/Spirent/stc-ansible/tree/master/playbooks>`_ link.
+`Github <https://github.com/Viavi-TestCenter/stc-ansible/tree/master/playbooks>`_ link.
 
 
 Create VTEP Device
@@ -27,7 +27,7 @@ Create VTEP Device
 Purpose
 ~~~~~~~
 
-Creates VXLAN Tunnel End Point (VTEP) object(s) in the Spirent Test Center(stc) datamodel under the emulated device object(s).
+Creates VXLAN Tunnel End Point (VTEP) object(s) in the VIAVI TestCenter(stc) datamodel under the emulated device object(s).
 During the object creation, Name and other VTEP properties can be defined.
 The name of the VTEP object will be used as a reference in order to reconfigure/modify
 any of it's properties later.
@@ -129,7 +129,7 @@ Parameters
           <div>To create VTEP, use <code>VxlanVtepConfig</code> object.</div>
           <div><b>Required:</b> Yes.</div>
           <div><b>See Also:</b></div>
-          <div>    <a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/VxlanVtepConfig.htm'> VXLAN VTEP object reference guide</a><div>
+          <div>    <a href='http://10.126.37.131:8080/automation/html/VxlanVtepConfig.htm'> VXLAN VTEP object reference guide</a><div>
        </td>
      </tr>
    </table>
@@ -277,7 +277,7 @@ Parameters
           <div>To create Vxlan interface, use <code>VxlanIf</code> object.</div>
           <div><b>Required:</b> Yes.</div>
           <div><b>See Also:</b></div>
-          <div>    <a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/VxlanIf.htm'> Vxlan interface object reference guide</a><div>
+          <div>    <a href='http://10.126.37.131:8080/automation/html/VxlanIf.htm'> Vxlan interface object reference guide</a><div>
        </td>
      </tr>
    </table>
@@ -405,7 +405,7 @@ Parameters
           <div>To create Vxlan segments, use <code>VxlanSegmentConfig</code> object.</div>
           <div><b>Required:</b> Yes.</div>
           <div><b>See Also:</b></div>
-          <div>    <a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/VxlanSegmentConfig.htm'> Vxlan Segment object reference guide</a><div>
+          <div>    <a href='http://10.126.37.131:8080/automation/html/VxlanSegmentConfig.htm'> Vxlan Segment object reference guide</a><div>
        </td>
      </tr>
    </table>
@@ -548,7 +548,7 @@ Parameters
           <div>To create Vxlan VM configuration, use <code>VxlanVMInfo</code> object.</div>
           <div><b>Required:</b> Yes.</div>
           <div><b>See Also:</b></div>
-          <div>    <a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/VxlanVmInfo.htm'> Vxlan VM config object reference guide</a><div>
+          <div>    <a href='http://10.126.37.131:8080/automation/html/VxlanVmInfo.htm'> Vxlan VM config object reference guide</a><div>
        </td>
      </tr>
    </table>
@@ -650,7 +650,7 @@ Synopsis
           <div>Specifies to identify the properties of VXLAN VM Info object object.</div>
           <div><b>Required:</b> Yes</div>
           <div>For VXLAN VM Info object attributes and possible relations, please refer <div>
-          <div>    <a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/VxlanVmInfo.htm'> VXLAN VM Info object reference guide</a><div>
+          <div>    <a href='http://10.126.37.131:8080/automation/html/VxlanVmInfo.htm'> VXLAN VM Info object reference guide</a><div>
        </td>
      </tr>
    </table>

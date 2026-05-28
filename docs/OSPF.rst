@@ -28,7 +28,7 @@ Now, you can verify the traffic statistics (transmitted and received packets) be
 routers/LSAs by starting the devices (here emulated OSPF routers).
 
 Please refer example playbooks ospfv2-traffic.yaml and ospfv3-traffic.yaml in
-`Github <https://github.com/Spirent/stc-ansible/tree/master/playbooks>`_ link.
+`Github <https://github.com/Viavi-TestCenter/stc-ansible/tree/master/playbooks>`_ link.
 
 
 Create OSPF Device
@@ -37,7 +37,7 @@ Create OSPF Device
 Purpose
 ~~~~~~~
 
-Creates OSPF object(s) in the Spirent Test Center(stc) datamodel under the emulated device object(s).
+Creates OSPF object(s) in the VIAVI TestCenter(stc) datamodel under the emulated device object(s).
 During the object creation, Name and other OSPF properties can be defined.
 The name of the OSPF object will be used as a reference in order to reconfigure/modify
 any of it's properties later.
@@ -140,8 +140,8 @@ Parameters
           <div>To create OSPF version 3 device, use <code>Ospfv3RouterConfig</code> object.</div>
           <div><b>Required:</b> Yes.</div>
           <div><b>See Also:</b></div>
-          <div> <a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/Ospfv2RouterConfig.htm'> OSPF v2 object reference guide</a><div>
-          <div> <a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/Ospfv3RouterConfig.htm'> OSPF v3 object reference guide</a><div>
+          <div> <a href='http://10.126.37.131:8080/automation/html/Ospfv2RouterConfig.htm'> OSPF v2 object reference guide</a><div>
+          <div> <a href='http://10.126.37.131:8080/automation/html/Ospfv3RouterConfig.htm'> OSPF v3 object reference guide</a><div>
        </td>
      </tr>
    </table>
@@ -271,8 +271,8 @@ Synopsis
           <div>Specifies to identify the properties of OSPF objects.</div>
           <div><b>Required:</b> Yes</div>
           <div>For OSPF attributes, please refer <div>
-          <div> <a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/Ospfv2RouterConfig.htm'> OSPF v2 object reference guide</a><div>
-          <div> <a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/Ospfv3RouterConfig.htm'> OSPF v3 object reference guide</a><div>
+          <div> <a href='http://10.126.37.131:8080/automation/html/Ospfv2RouterConfig.htm'> OSPF v2 object reference guide</a><div>
+          <div> <a href='http://10.126.37.131:8080/automation/html/Ospfv3RouterConfig.htm'> OSPF v3 object reference guide</a><div>
        </td>
      </tr>
    </table>
@@ -398,12 +398,12 @@ Parameters
           <div>To create AS-External Prefix LSA under OSPF v2 and OSPF v3 routers, use <code>ExternalLsablock</code> and <code>Ospfv3AsExternalLsaBlock</code> objects.
           <div><b>Required:</b> Yes.</div>
           <div><b>See Also:</b>
-          <div><a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/RouterLsa.htm'>OSPF v2 RouterLSA Object Reference Guide</a> </div>
-          <div><a href='<http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/Ospfv3RouterLsa.htm'>OSPF v3 RouterLSA Object Reference Guide</a> </div>
-          <div><a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/ExtendedLinkLsa.htm'>OSPF v2 ExtendedLinkLsa Object Reference Guide</a> </div>
-          <div><a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/Ospfv3AsExternalLsaBlock.htm'>OSPF v3 Ospfv3AsExternalLsaBlock Object Reference Guide</a> </div>
-          <div> Refer <a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/Ospfv2RouterConfig.htm'> OSPF v2 object reference guide</a><div>
-          <div><a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/Ospfv3RouterConfig.htm'> OSPF v3 object reference guide</a> for other OSPF LSAs creation like Network LSA, Summary LSA etc.</div>
+          <div><a href='http://10.126.37.131:8080/automation/html/RouterLsa.htm'>OSPF v2 RouterLSA Object Reference Guide</a> </div>
+          <div><a href='http://10.126.37.131:8080/automation/html/Ospfv3RouterLsa.htm'>OSPF v3 RouterLSA Object Reference Guide</a> </div>
+          <div><a href='http://10.126.37.131:8080/automation/html/ExtendedLinkLsa.htm'>OSPF v2 ExtendedLinkLsa Object Reference Guide</a> </div>
+          <div><a href='http://10.126.37.131:8080/automation/html/Ospfv3AsExternalLsaBlock.htm'>OSPF v3 Ospfv3AsExternalLsaBlock Object Reference Guide</a> </div>
+          <div> Refer <a href='http://10.126.37.131:8080/automation/html/Ospfv2RouterConfig.htm'> OSPF v2 object reference guide</a><div>
+          <div><a href='http://10.126.37.131:8080/automation/html/Ospfv3RouterConfig.htm'> OSPF v3 object reference guide</a> for other OSPF LSAs creation like Network LSA, Summary LSA etc.</div>
        </td>
      </tr>
    </table>
@@ -594,12 +594,12 @@ Parameters
           <div>Specifies to identify the properties of OSPF LSA objects.</div>
           <div><b>Required:</b> Yes</div>
           <div><b>See Also:</b>
-          <div><a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/RouterLsa.htm'>OSPF v2 RouterLSA Object Reference Guide</a> </div>
-          <div><a href='<http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/Ospfv3RouterLsa.htm'>OSPF v3 RouterLSA Object Reference Guide</a> </div>
-          <div><a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/ExtendedLinkLsa.htm'>OSPF v2 ExtendedLinkLsa Object Reference Guide</a> </div>
-          <div><a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/Ospfv3AsExternalLsaBlock.htm'>OSPF v3 Ospfv3AsExternalLsaBlock Object Reference Guide</a> </div>
-          <div> Refer <a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/Ospfv2RouterConfig.htm'> OSPF v2 object reference guide</a><div>
-          <div><a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/Ospfv3RouterConfig.htm'> OSPF v3 object reference guide</a> for other OSPF LSAs configuration like Network LSA, Summary LSA etc.</div>
+          <div><a href='http://10.126.37.131:8080/automation/html/RouterLsa.htm'>OSPF v2 RouterLSA Object Reference Guide</a> </div>
+          <div><a href='http://10.126.37.131:8080/automation/html/Ospfv3RouterLsa.htm'>OSPF v3 RouterLSA Object Reference Guide</a> </div>
+          <div><a href='http://10.126.37.131:8080/automation/html/ExtendedLinkLsa.htm'>OSPF v2 ExtendedLinkLsa Object Reference Guide</a> </div>
+          <div><a href='http://10.126.37.131:8080/automation/html/Ospfv3AsExternalLsaBlock.htm'>OSPF v3 Ospfv3AsExternalLsaBlock Object Reference Guide</a> </div>
+          <div> Refer <a href='http://10.126.37.131:8080/automation/html/Ospfv2RouterConfig.htm'> OSPF v2 object reference guide</a><div>
+          <div><a href='http://10.126.37.131:8080/automation/html/Ospfv3RouterConfig.htm'> OSPF v3 object reference guide</a> for other OSPF LSAs configuration like Network LSA, Summary LSA etc.</div>
        </td>
      </tr>
    </table>
@@ -706,4 +706,4 @@ Examples
              AffiliationStreamBlockLoadProfile: 
              Load: 10
 
-For more examples please check `Playbooks <https://github.com/Spirent/stc-ansible/tree/master/playbooks>`_.
+For more examples please check `Playbooks <https://github.com/Viavi-TestCenter/stc-ansible/tree/master/playbooks>`_.

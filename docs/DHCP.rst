@@ -30,7 +30,7 @@ the creation. Same can also be reconfigured/modify later.
 Now, you can verify the DHCP server and session results by starting the devices.
 
 Please refer example playbooks dhcpv4-config.yaml and dhcpv6-config.yaml in
-`Github <https://github.com/Spirent/stc-ansible/tree/master/playbooks>`_ link.
+`Github <https://github.com/Viavi-TestCenter/stc-ansible/tree/master/playbooks>`_ link.
 
 
 Create DHCPv4/v6 Server
@@ -39,7 +39,7 @@ Create DHCPv4/v6 Server
 Purpose
 ~~~~~~~
 
-Creates DHCPv4 or DHCPv6 server object(s) in the Spirent Test Center(stc) datamodel under the emulated device object(s).
+Creates DHCPv4 or DHCPv6 server object(s) in the VIAVI TestCenter(stc) datamodel under the emulated device object(s).
 During the object creation, Name and other DHCP properties can be defined.
 The name of the DHCP object will be used as a reference in order to reconfigure/modify
 any of it's properties later.
@@ -142,8 +142,8 @@ Parameters
           <div>To create DHCPv6 Server, use <code>DHCPv6ServerConfig</code> object.</div>
           <div><b>Required:</b> Yes.</div>
           <div><b>See Also:</b></div>
-          <div>    <a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/Dhcpv4ServerConfig.htm'> DHCPv4 Server object reference guide</a><div>
-          <div>    <a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/Dhcpv6ServerConfig.htm'> DHCPv6 Server object reference guide</a><div>
+          <div>    <a href='http://10.126.37.131:8080/automation/html/Dhcpv4ServerConfig.htm'> DHCPv4 Server object reference guide</a><div>
+          <div>    <a href='http://10.126.37.131:8080/automation/html/Dhcpv6ServerConfig.htm'> DHCPv6 Server object reference guide</a><div>
        </td>
      </tr>
    </table>
@@ -278,8 +278,8 @@ Synopsis
           <div>Specifies to identify the properties of DHCPv4 or DHCPv6 Server object.</div>
           <div><b>Required:</b> Yes</div>
           <div>For DHCPv4 and DHCPv6 Server attributes, please refer <div>
-          <div>    <a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/Dhcpv4ServerConfig.htm'> DHCPv4 Server object reference guide</a><div>
-          <div>    <a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/Dhcpv6ServerConfig.htm'> DHCPv6 Server object reference guide</a><div>
+          <div>    <a href='http://10.126.37.131:8080/automation/html/Dhcpv4ServerConfig.htm'> DHCPv4 Server object reference guide</a><div>
+          <div>    <a href='http://10.126.37.131:8080/automation/html/Dhcpv6ServerConfig.htm'> DHCPv6 Server object reference guide</a><div>
        </td>
      </tr>
    </table>
@@ -405,8 +405,8 @@ Synopsis
           <div>Specifies to identify the properties of DHCPv4 or DHCPv6 port object.</div>
           <div><b>Required:</b> Yes</div>
           <div>For DHCPv4 and DHCPv6 Port attributes, please refer <div>
-          <div>    <a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/Dhcpv4PortConfig.htm'> DHCPv4 Port object reference guide</a><div>
-          <div>    <a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/Dhcpv6PortConfig.htm'> DHCPv6 Port object reference guide</a><div>
+          <div>    <a href='http://10.126.37.131:8080/automation/html/Dhcpv4PortConfig.htm'> DHCPv4 Port object reference guide</a><div>
+          <div>    <a href='http://10.126.37.131:8080/automation/html/Dhcpv6PortConfig.htm'> DHCPv6 Port object reference guide</a><div>
        </td>
      </tr>
    </table>
@@ -444,7 +444,7 @@ Create DHCPv4/v6 Session Block
 Purpose
 ~~~~~~~
 
-Creates DHCPv4 or DHCPv6 sessions block object(s) in the Spirent Test Center(stc) datamodel under the emulated device object(s).
+Creates DHCPv4 or DHCPv6 sessions block object(s) in the VIAVI TestCenter(stc) datamodel under the emulated device object(s).
 During the object creation, Name and other DHCP session properties can be defined.
 The name of the DHCP object will be used as a reference in order to reconfigure/modify
 any of it's properties later.
@@ -547,8 +547,8 @@ Parameters
           <div>To create DHCPv6 Session block, use <code>DHCPv6BlockConfig</code> object.</div>
           <div><b>Required:</b> Yes.</div>
           <div><b>See Also:</b></div>
-          <div>    <a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/Dhcpv4BlockConfig.htm'> DHCPv4 session block object reference guide</a><div>
-          <div>    <a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/Dhcpv6BlockConfig.htm'> DHCPv6 session block object reference guide</a><div>
+          <div>    <a href='http://10.126.37.131:8080/automation/html/Dhcpv4BlockConfig.htm'> DHCPv4 session block object reference guide</a><div>
+          <div>    <a href='http://10.126.37.131:8080/automation/html/Dhcpv6BlockConfig.htm'> DHCPv6 session block object reference guide</a><div>
        </td>
      </tr>
    </table>
@@ -677,8 +677,8 @@ Synopsis
           <div>Specifies to identify the properties of DHCPv4 or DHCPv6 Session block object.</div>
           <div><b>Required:</b> Yes</div>
           <div>For DHCPv4 and DHCPv6 Session block attributes, please refer <div>
-          <div>    <a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/Dhcpv4BlockConfig.htm'> DHCPv4 session block object reference guide</a><div>
-          <div>    <a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/Dhcpv6BlockConfig.htm'> DHCPv6 session block object reference guide</a><div>
+          <div>    <a href='http://10.126.37.131:8080/automation/html/Dhcpv4BlockConfig.htm'> DHCPv4 session block object reference guide</a><div>
+          <div>    <a href='http://10.126.37.131:8080/automation/html/Dhcpv6BlockConfig.htm'> DHCPv6 session block object reference guide</a><div>
        </td>
      </tr>
    </table>

@@ -9,16 +9,20 @@ Getting Started
 Introduction
 ------------
 
-STC Ansible is an experimental plugin designed to configure Spirent TestCenter data models
+STC Ansible is an experimental plugin designed to configure VIAVI TestCenter data models
 and execute tests.
+
+.. note::
+   **STC** is short for **VIAVI TestCenter**. The lowercase ``stc`` prefix is used
+   throughout this module's Ansible action keywords (``stc:``), inventory groups,
+   and configuration values.
 
 
 Preparation
 -----------
 
 - This STC Ansible module requires a recent version (>=2.5) of the Ansible client.
-- This STC Ansible module can be used to remote configure an STC Lab Server.
-- Configuration of STC-web is currently not supported.
+- This STC Ansible module can be used to remote configure a TC LabServer.
 - This module is supported and tested in Linux (Ubuntu 18.04 64bit) environment.
 
 Installation
@@ -37,7 +41,7 @@ Configuration
 Inventory
 ~~~~~~~~~
 
-In your inventory (inventory.ini), declare the STC Lab Servers you want the Ansible playbook to connect to:
+In your inventory (inventory.ini), declare the TC LabServers you want the Ansible playbook to connect to:
 
 .. parsed-literal::
 
@@ -48,11 +52,11 @@ In your inventory (inventory.ini), declare the STC Lab Servers you want the Ansi
     ansible_connection=paramiko
     ansible_host_key_checking=no
     ansible_user=admin
-    ansible_ssh_pass=spirent
+    ansible_ssh_pass=viavi
     ansible_ssh_common_args=/bin/ssh
     ansible_paramiko_pty=no
 
-.. note:: `ansible_paramiko_pty` must be set to no as it will otherwise fail to connect to the STC Lab Server.
+.. note:: `ansible_paramiko_pty` must be set to no as it will otherwise fail to connect to the TC LabServer.
 
 Ansible STC Module
 ~~~~~~~~~~~~~~~~~~
@@ -63,7 +67,7 @@ of the `module_utils` and `library` into the folder from which you are running y
 Running an Ansible Playbook
 ---------------------------
 
-There are several example playbooks in the `playbooks <https://github.com/Spirent/stc-ansible/tree/master/playbooks>`_ folder. To run all of them, 
+There are several example playbooks in the `playbooks <https://github.com/Viavi-TestCenter/stc-ansible/tree/master/playbooks>`_ folder. To run all of them, 
 just use make play, and it will create an STC session for each of the playbooks. 
 (You can also use make debug to run ansible with extra verbose output).
 
@@ -75,7 +79,7 @@ To make it easier to troubleshoot your playbook, you can use the STC ansible emu
 
 .. parsed-literal::
 
-    ./emulator.py -labserver lab-serverIP-address you-playbook.yaml
+    ./emulator.py -labserver labserver-IP-address you-playbook.yaml
 
 STC Ansible Actions
 -------------------
@@ -140,7 +144,7 @@ The stc Ansible module makes it possible to execute one of the following actions
        <td>load</td>
        <td>
            <div>Loads a predefined XML data model. Note that the model must first be copied to the target</div>
-           <div>STC Lab Server using the copy module. Check the datamodel-loader.yaml playbook for reference.</div>
+           <div>TC LabServer using the copy module. Check the datamodel-loader.yaml playbook for reference.</div>
        </td>
      </tr>
      <tr>
@@ -195,10 +199,10 @@ The stc Ansible module makes it possible to execute one of the following actions
 STC configuration structure
 ---------------------------
 
-The STC Ansible module does not connect directly to the STC Lab Server via the STC REST API. 
-Instead, it first ssh into the STC Lab Server, and then uses the REST API to connect to the BLL.
+The STC Ansible module does not connect directly to the TC LabServer via the STC REST API. 
+Instead, it first ssh into the TC LabServer, and then uses the REST API to connect to the BLL.
 
-.. image:: /docs/_static/images/design.png
+.. image:: _static/images/design.png
 
 
 Related Documentation
@@ -206,9 +210,7 @@ Related Documentation
 
 Additional documentation related to this guide:
 
-- `Instructions on how to set up LabServer` - https://support.spirent.com/SpirentCSC/SC_KnowledgeView?cid=null&id=DOC10792
-
-- `Spirent TestCenter Automation Object Reference` - http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/index-all.htm
+- `VIAVI TestCenter Automation Object Reference` - http://10.126.37.131:8080/automation/html/index-all.htm
 
 - `Ansible user guide` - https://docs.ansible.com/ansible/latest/user_guide/index.html
 

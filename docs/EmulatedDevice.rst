@@ -32,7 +32,7 @@ Create Emulated Device
 Purpose
 ~~~~~~~
 
-Creates emulated device object(s) in the Spirent Test Center(stc) datamodel under the project object
+Creates emulated device object(s) in the VIAVI TestCenter(stc) datamodel under the project object
 affiliated with any created port object(s).
 During the object creation, requires to configure interface stacking and individual properties like ip address,
 gateway, devicecount, name etc.
@@ -70,7 +70,7 @@ Synopsis
             name: <device name>
    
 For the properties details of first method (creating emulateddevice using `perform`), please refer
-`DeviceCreate Command Reference Document <http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/DeviceCreateCommand.htm>`_.
+`DeviceCreate Command Reference Document <http://10.126.37.131:8080/automation/html/DeviceCreateCommand.htm>`_.
 
 .. parsed-literal::
    
@@ -164,15 +164,15 @@ Parameters
           <div>To create emulateddevice, use <code>EmulatedDevice</code> object.</div>
           <div><b>Required:</b> Yes.</div>
           <div><b>See Also:</b></div>
-          <div>    <a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/EmulatedDevice.htm'> EmulatedDevice object reference guide</a><div>
+          <div>    <a href='http://10.126.37.131:8080/automation/html/EmulatedDevice.htm'> EmulatedDevice object reference guide</a><div>
           <div> Following are some direct links to specific interface objects. Same are also available in 'EmulatedDevice object reference guide' link given above.</div>
-          <div>For EthIIIf properties <a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/EthIIIf.htm'> EthIIIf object reference page
+          <div>For EthIIIf properties <a href='http://10.126.37.131:8080/automation/html/EthIIIf.htm'> EthIIIf object reference page
           </a></div>
-          <div>For VlanIf properties <a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/VlanIf.htm'> VlanIf object reference page 
+          <div>For VlanIf properties <a href='http://10.126.37.131:8080/automation/html/VlanIf.htm'> VlanIf object reference page 
           </a><div>
-          <div>For Ipv4If properties <a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/Ipv4If.htm'> Ipv4If object reference page 
+          <div>For Ipv4If properties <a href='http://10.126.37.131:8080/automation/html/Ipv4If.htm'> Ipv4If object reference page 
           </a><div>
-          <div>For Ipv6If properties <a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/Ipv6If.htm'> Ipv6If object reference page 
+          <div>For Ipv6If properties <a href='http://10.126.37.131:8080/automation/html/Ipv6If.htm'> Ipv6If object reference page 
           </a><div>
        </td>
      </tr>
@@ -1070,14 +1070,14 @@ Synopsis
                    <div><code>DeviceCount: 1</code></div>
                    <div><code>RouterId: 1.0.0.0</code></div>
             <div><b>See Also:</b></div>
-          <div><a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/EmulatedDevice.htm'> EmulatedDevice object reference guide</a><div>
-          <div><a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/EthIIIf.htm'> EthIIIf object reference page
+          <div><a href='http://10.126.37.131:8080/automation/html/EmulatedDevice.htm'> EmulatedDevice object reference guide</a><div>
+          <div><a href='http://10.126.37.131:8080/automation/html/EthIIIf.htm'> EthIIIf object reference page
           </a></div>
-          <div><a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/VlanIf.htm'> VlanIf object reference page 
+          <div><a href='http://10.126.37.131:8080/automation/html/VlanIf.htm'> VlanIf object reference page 
           </a><div>
-          <div> <a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/Ipv4If.htm'> Ipv4If object reference page 
+          <div> <a href='http://10.126.37.131:8080/automation/html/Ipv4If.htm'> Ipv4If object reference page 
           </a><div>
-          <div> <a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/Ipv6If.htm'> Ipv6If object reference page 
+          <div> <a href='http://10.126.37.131:8080/automation/html/Ipv6If.htm'> Ipv6If object reference page 
           </a><div>
        </td>
      </tr>
@@ -1134,4 +1134,4 @@ Examples
             IdStep: 1
             Priority: 1
 
-For more examples please check `Playbooks <https://github.com/Spirent/stc-ansible/tree/master/playbooks>`_.
+For more examples please check `Playbooks <https://github.com/Viavi-TestCenter/stc-ansible/tree/master/playbooks>`_.

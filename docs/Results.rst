@@ -110,7 +110,7 @@ Parameters
             <div><code>properties:</code></div>
             <div><code>TemplateUri: "/Result Views/Stream Results/Stream Block Results.xml"</code></div>
             <div><b>See Also:</b></div>
-            <div>    <a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/SubscribeResultsViewCommand.htm'> SubscribeResultsViewCommand page</a><div>
+            <div>    <a href='http://10.126.37.131:8080/automation/html/SubscribeResultsViewCommand.htm'> SubscribeResultsViewCommand page</a><div>
             <div><b>NOTES:</b></div>
             <div>Default result view template xml files are available in Labserver under</div>
             <div>"/home/testcenter/server/Templates/System/Result Views/"</div>
@@ -263,7 +263,7 @@ Parameters
                    <div><code>objects: /EmulatedDevice[@Name='PPPoE']/PppoeServerBlockConfig/</code></div>
                    <div><code>PppoeServerBlockResults</code></div>
             <div><b>See Also:</b></div>
-                   <div> - <a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/index-result.htm'> Result object reference guide</a></div>
+                   <div> - <a href='http://10.126.37.131:8080/automation/html/index-result.htm'> Result object reference guide</a></div>
                    <div> - <a href='https://www.w3schools.com/xml/xpath_syntax.asp'>XPATH Standard (Selecting Nodes)</a></div>
        </td>
      </tr>
@@ -446,7 +446,7 @@ Parameters
                    <div><code>  PresentationResultQuery: </code></div>
                    <div><code>  Selectproperties: "StreamBlock.StreamId StreamBlock.Name Port.Name" </code></div>
           <div><b>See Also:</b></div>
-          <div> <a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/DynamicResultView.htm'> DynamicResultView object reference guide</a><div>
+          <div> <a href='http://10.126.37.131:8080/automation/html/DynamicResultView.htm'> DynamicResultView object reference guide</a><div>
           <div><b>NOTES:</b></div>
             <div> If the DRV query parameters are not valid, the create action will not fail, but the subsequent drv.subscribe will fail.</div>
        </td>

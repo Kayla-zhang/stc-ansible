@@ -1,5 +1,3 @@
-# Purpose: To verify https://jira.spirenteng.com/browse/CIPCD-16798 fix
-
 # Description/Scenario:
 #• When creating or configuring an object:
 #o If any property is using a reference, and the reference returns no results (empty node set), then the script should fail.

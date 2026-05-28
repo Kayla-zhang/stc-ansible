@@ -8,3 +8,7 @@ logs/*
 .vscode/
 launch.json
 settings.json
+
+# Sphinx docs build output
+docs/_build/
+*.bak

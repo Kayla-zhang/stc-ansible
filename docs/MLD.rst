@@ -29,7 +29,7 @@ Now, you can verify the traffic statistics (transmitted and received packets) be
 hosts/multicast groups by starting the devices (here emulated MLD hosts).
 
 Please refer example playbooks mld-config.yaml in
-`Github <https://github.com/Spirent/stc-ansible/tree/master/playbooks>`_ playbook folder.
+`Github <https://github.com/Viavi-TestCenter/stc-ansible/tree/master/playbooks>`_ playbook folder.
 
 
 Create MLD Host
@@ -38,7 +38,7 @@ Create MLD Host
 Purpose
 ~~~~~~~
 
-Creates MLD object(s) in the Spirent Test Center(stc) datamodel under the emulated device object(s).
+Creates MLD object(s) in the VIAVI TestCenter(stc) datamodel under the emulated device object(s).
 During the object creation, Name and other MLD properties can be defined.
 The name of the MLD object will be used as a reference in order to reconfigure/modify
 any of it's properties later.
@@ -140,7 +140,7 @@ Parameters
           <div>To create MLD version 1, 2 or 3 host blocks, use <code>MLDhostConfig</code> object.</div>
           <div><b>Required:</b> Yes.</div>
           <div><b>See Also:</b></div>
-          <div> <a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/MLDHostConfig.htm'> MLD object reference guide</a><div>
+          <div> <a href='http://10.126.37.131:8080/automation/html/MLDHostConfig.htm'> MLD object reference guide</a><div>
        </td>
      </tr>
    </table>
@@ -269,7 +269,7 @@ Synopsis
           <div>Specifies to identify the properties of MLD objects.</div>
           <div><b>Required:</b> Yes</div>
           <div>For MLD attributes, please refer <div>
-          <div> <a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/MLDHostConfig.htm'> MLD object reference guide</a><div>
+          <div> <a href='http://10.126.37.131:8080/automation/html/MLDHostConfig.htm'> MLD object reference guide</a><div>
        </td>
      </tr>
    </table>
@@ -378,7 +378,7 @@ Parameters
           <div>To create group memberships under MLD v1/v2 hosts, use <code>MLDGroupMembership</code> object.
           <div><b>Required:</b> Yes.</div>
           <div><b>See Also:</b>
-          <div><a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/MLDGroupMembership.htm'> MLD group membership Object Reference Guide</a> </div>
+          <div><a href='http://10.126.37.131:8080/automation/html/MLDGroupMembership.htm'> MLD group membership Object Reference Guide</a> </div>
           <div><b>NOTES:</b></div>
             <div>1. An IPv6 Multicast group must already exist. <a href='../docs/Multicast.rst'>Multicast Group </a> section</div>
        </td>
@@ -535,7 +535,7 @@ Parameters
           <div>Specifies to identify the properties of MLD group membership objects.</div>
           <div><b>Required:</b> Yes</div>
           <div><b>See Also:</b>
-          <div><a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/MLDGroupMembership.htm'> MLD group membership Object Reference Guide</a> </div>
+          <div><a href='http://10.126.37.131:8080/automation/html/MLDGroupMembership.htm'> MLD group membership Object Reference Guide</a> </div>
           <div><b>NOTES:</b></div>
             <div>1. An IPv6 Multicast group must already exist. <a href='../docs/Multicast.rst'>Multicast Group </a> section</div>
        </td>
@@ -615,4 +615,4 @@ Examples
              AffiliationStreamBlockLoadProfile: 
                Load: 10
 
-For more examples please check `Playbooks <https://github.com/Spirent/stc-ansible/tree/master/playbooks>`_.
+For more examples please check `Playbooks <https://github.com/Viavi-TestCenter/stc-ansible/tree/master/playbooks>`_.

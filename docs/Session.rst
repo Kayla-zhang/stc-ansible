@@ -8,7 +8,7 @@ Session
 Overview
 --------
 
-In `STC Ansible`, the first task of the playbook must be to create/attach to a STC labserver session.
+In `STC Ansible`, the first task of the playbook must be to create/attach to a TC LabServer session.
 
 To create new session, you need to use `session` or `create_session` actions by specifing the user 
 and session name. If the session is already exists with the given name, it will attach automatically.
@@ -95,7 +95,7 @@ Parameters
        <td>user</td>
        <td>string</td>
        <td>
-           <div> Specifies the STC labserver session user name. </div>
+           <div> Specifies the TC LabServer session user name. </div>
            <div><b>Required:</b> Yes</div>
        </td>
      </tr>
@@ -103,7 +103,7 @@ Parameters
        <td>name</td>
        <td>string</td>
        <td>
-           <div> Specifies the STC labserver session name. </div>
+           <div> Specifies the TC LabServer session name. </div>
            <div><b>Required:</b> Yes</div>
        </td>
      </tr>
@@ -301,7 +301,7 @@ Attach an existing Session
 Purpose
 ~~~~~~~
 
-Use to attach an existing STC labserver session. If the session doen't exist, the playbook will fail.
+Use to attach an existing TC LabServer session. If the session doen't exist, the playbook will fail.
 
 .. note:: :mandatory:`M` indicates that the parameter is  :mandatory:`Mandatory`.
 
@@ -360,7 +360,7 @@ Parameters
        <td>user</td>
        <td>string</td>
        <td>
-           <div> Specifies the STC labserver session user name. </div>
+           <div> Specifies the TC LabServer session user name. </div>
            <div><b>Required:</b> Yes</div>
        </td>
      </tr>
@@ -368,7 +368,7 @@ Parameters
        <td>name</td>
        <td>string</td>
        <td>
-           <div> Specifies the STC labserver session name. </div>
+           <div> Specifies the TC LabServer session name. </div>
            <div><b>Required:</b> Yes</div>
        </td>
      </tr>
@@ -459,7 +459,7 @@ Parameters
        <td>user</td>
        <td>string</td>
        <td>
-           <div> Specifies the STC labserver session user name.</div> 
+           <div> Specifies the TC LabServer session user name.</div> 
            <div> This parameter can be specified when specific user created sessions need to be deleted.</div>
            <div>Applicable only for delete_session action.</div>
            <div><b>Required:</b> No. Optional field</div>
@@ -469,7 +469,7 @@ Parameters
        <td>name</td>
        <td>string</td>
        <td>
-           <div> Specifies the STC labserver session name or names. </div>
+           <div> Specifies the TC LabServer session name or names. </div>
            <div>Applicable only for delete_session action.</div>
            <div><b>Required:</b> Yes</div>
           <div><b>Example:</b></div>

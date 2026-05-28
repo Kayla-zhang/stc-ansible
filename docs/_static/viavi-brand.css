@@ -1,0 +1,32 @@
+/* VIAVI brand tweaks on top of sphinx_rtd_theme. */
+
+/* Brand colors */
+:root {
+  --viavi-purple: #491E88;
+  --viavi-purple-light: #6B3FBA;
+}
+
+/* Page H1 (title) in VIAVI purple */
+.rst-content h1 {
+  color: var(--viavi-purple);
+}
+
+/* Section headings stay readable, accent in purple */
+.rst-content h2,
+.rst-content h3 {
+  color: var(--viavi-purple);
+}
+
+/* Inline links pick up brand accent */
+.rst-content a {
+  color: var(--viavi-purple);
+}
+
+.rst-content a:hover {
+  color: var(--viavi-purple-light);
+}
+
+/* Sidebar caption ("Getting started", "Routing protocols", etc.) */
+.wy-menu-vertical p.caption {
+  color: #c4a8ff;
+}

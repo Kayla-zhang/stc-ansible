@@ -18,7 +18,7 @@ Create Multicast Group
 Purpose
 ~~~~~~~
 
-Creates IPv4 or IPv6 multicast group object(s) in the Spirent Test Center(stc) datamodel under the project.
+Creates IPv4 or IPv6 multicast group object(s) in the VIAVI TestCenter(stc) datamodel under the project.
 During the object creation, Name and other properties can be defined.
 The name of the multicast group will be used as a reference in order to reconfigure/modify
 any of it's properties later.
@@ -116,8 +116,8 @@ Parameters
           <div>To create IPv6 multicast group, use <code>Ipv6group</code> object.</div>
           <div><b>Required:</b> Yes.</div>
           <div><b>See Also:</b></div>
-          <div> <a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/Ipv4Group.htm'> IPv4 Multicast group reference guide</a><div>
-          <div> <a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/Ipv6Group.htm'> IPv6 Multicast group reference guide</a><div>
+          <div> <a href='http://10.126.37.131:8080/automation/html/Ipv4Group.htm'> IPv4 Multicast group reference guide</a><div>
+          <div> <a href='http://10.126.37.131:8080/automation/html/Ipv6Group.htm'> IPv6 Multicast group reference guide</a><div>
        </td>
      </tr>
    </table>
@@ -254,9 +254,9 @@ Synopsis
           <div>Specifies to identify the properties of multicast group.</div>
           <div><b>Required:</b> Yes</div>
           <div>For IPv4 multicast group attributes, please refer <div>
-          <div> <a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/Ipv4Group.htm'> IPv4 multicast group reference guide</a><div>
+          <div> <a href='http://10.126.37.131:8080/automation/html/Ipv4Group.htm'> IPv4 multicast group reference guide</a><div>
           <div>For IPv6 multicast group attributes, please refer <div>
-          <div> <a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/Ipv6Group.htm'> IPv6 multicast group reference guide</a><div>
+          <div> <a href='http://10.126.37.131:8080/automation/html/Ipv6Group.htm'> IPv6 multicast group reference guide</a><div>
        </td>
      </tr>
    </table>

@@ -27,7 +27,7 @@ between the routers or the routes by setting the source and destination BGP obje
 Now, you can verify the traffic statistics (transmitted and received packets) between the 
 routers/routes by starting the devices (here emulated BGP routers).
 
-Please refer example playbook `BGP_Traffic <https://github.com/Spirent/stc-ansible/blob/master/playbooks/bgp-traffic.yaml>`_.
+Please refer example playbook `BGP_Traffic <https://github.com/Viavi-TestCenter/stc-ansible/blob/master/playbooks/bgp-traffic.yaml>`_.
 
 
 Create BGP Device
@@ -36,7 +36,7 @@ Create BGP Device
 Purpose
 ~~~~~~~
 
-Creates BGP object(s) in the Spirent Test Center(stc) datamodel under the emulated device object(s).
+Creates BGP object(s) in the VIAVI TestCenter(stc) datamodel under the emulated device object(s).
 During the object creation, Name and other BGP properties can be defined.
 The name of the BGP object will be used as a reference in order to reconfigure/modify
 any of it's properties later.
@@ -138,7 +138,7 @@ Parameters
           <div>To create BGP device, use <code>BgpRouterConfig</code> object.</div>
           <div><b>Required:</b> Yes.</div>
           <div><b>See Also:</b></div>
-          <div>    <a href='https://kms.spirentcom.com/CSC/pabtech/stc-automation-html/BgpRouterConfig.htm'> Bgp object reference guide</a><div>
+          <div>    <a href='http://10.126.37.131:8080/automation/html/BgpRouterConfig.htm'> Bgp object reference guide</a><div>
        </td>
      </tr>
    </table>
@@ -268,7 +268,7 @@ Synopsis
           <div>Specifies to identify the properties of BGP object.</div>
           <div><b>Required:</b> Yes</div>
           <div>For BGP attributes, please refer <div>
-          <div><a href='https://kms.spirentcom.com/CSC/pabtech/stc-automation-html/BgpRouterConfig.htm'> Bgp object reference guide</a><div>
+          <div><a href='http://10.126.37.131:8080/automation/html/BgpRouterConfig.htm'> Bgp object reference guide</a><div>
        </td>
      </tr>
    </table>
@@ -380,9 +380,9 @@ Parameters
           <div>To create IPv4 and IPv6 BGP routes, use <code>BgpIpv4RouteConfig</code> and <code>BgpIpv6RouteConfig</code> objects.
           <div><b>Required:</b> Yes.</div>
           <div><b>See Also:</b>
-          <div><a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/BgpIpv4RouteConfig.htm'>Bgp Ipv4 Route Object Reference Guide</a> </div>
-          <div><a href='<http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/BgpIpv6RouteConfig.htm'>Bgp Ipv6 Route Object Reference Guide</a> </div>
-          <div><a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/BgpRouterConfig.htm'>BGP object Reference Guide</a> for other BGP routes creation like SRTE, LinkState, EVPN etc.</div>
+          <div><a href='http://10.126.37.131:8080/automation/html/BgpIpv4RouteConfig.htm'>Bgp Ipv4 Route Object Reference Guide</a> </div>
+          <div><a href='http://10.126.37.131:8080/automation/html/BgpIpv6RouteConfig.htm'>Bgp Ipv6 Route Object Reference Guide</a> </div>
+          <div><a href='http://10.126.37.131:8080/automation/html/BgpRouterConfig.htm'>BGP object Reference Guide</a> for other BGP routes creation like SRTE, LinkState, EVPN etc.</div>
        </td>
      </tr>
    </table>
@@ -518,9 +518,9 @@ Parameters
           <div>Specifies to identify the properties of BGP Route objects.</div>
           <div><b>Required:</b> Yes</div>
           <div><b>See Also:</b>
-          <div><a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/BgpIpv4RouteConfig.htm'>Bgp Ipv4 Route Object Reference Guide</a> </div>
-          <div><a href='<http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/BgpIpv6RouteConfig.htm'>Bgp Ipv6 Route Object Reference Guide</a> </div>
-          <div><a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/BgpRouterConfig.htm'>BGP object Reference Guide</a> for other BGP routes configuration like SRTE, LinkState, EVPN etc.</div>
+          <div><a href='http://10.126.37.131:8080/automation/html/BgpIpv4RouteConfig.htm'>Bgp Ipv4 Route Object Reference Guide</a> </div>
+          <div><a href='http://10.126.37.131:8080/automation/html/BgpIpv6RouteConfig.htm'>Bgp Ipv6 Route Object Reference Guide</a> </div>
+          <div><a href='http://10.126.37.131:8080/automation/html/BgpRouterConfig.htm'>BGP object Reference Guide</a> for other BGP routes configuration like SRTE, LinkState, EVPN etc.</div>
        </td>
      </tr>
    </table>
@@ -616,4 +616,4 @@ Examples
              Load: 10
 
 
-For more examples please check `Playbooks <https://github.com/Spirent/stc-ansible/tree/master/playbooks>`_.
+For more examples please check `Playbooks <https://github.com/Viavi-TestCenter/stc-ansible/tree/master/playbooks>`_.

@@ -8,7 +8,7 @@ Port
 Overview
 --------
 
-In `STC Ansible`, after creating a session and connecting to the Spirent Test Center chassis, 
+In `STC Ansible`, after creating a session and connecting to the VIAVI TestCenter chassis, 
 you need to create the port objects.
 
 You can create a single or multiple ports. Use `Port` object to create ports under the project.
@@ -27,7 +27,7 @@ Create Port
 Purpose
 ~~~~~~~
 
-Creates port object(s) in the Spirent Test Center(stc) datamodel under the project.
+Creates port object(s) in the VIAVI TestCenter(stc) datamodel under the project.
 During the object creation, requires to configure it's characteristics like name and location.
 The name of the port object will be used as a reference in order to reconfigure/modify
 any of it's properties later.
@@ -132,7 +132,7 @@ Parameters
           <div>To create port, use <code>Port</code> object.</div>
           <div><b>Required:</b> Yes.</div>
           <div><b>See Also:</b></div>
-          <div>    <a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/Port.htm'> Port object reference guide</a><div>
+          <div>    <a href='http://10.126.37.131:8080/automation/html/Port.htm'> Port object reference guide</a><div>
        </td>
      </tr>
    </table>
@@ -295,7 +295,7 @@ Synopsis
                    <div><code>properties:</code></div>
                    <div><code>location: "//10.109.123.12/1/1"</code></div>
             <div><b>See Also:</b></div>
-          <div>    <a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/Port.htm'> Port object reference guide</a><div>
+          <div>    <a href='http://10.126.37.131:8080/automation/html/Port.htm'> Port object reference guide</a><div>
        </td>
      </tr>
    </table>
@@ -370,8 +370,8 @@ Synopsis
             <div>Specifies the properties supported to perform AttachPorts or DetachPorts command.
             <div><b>Required:</b> Yes.</div>
             <div><b>See Also:</b></div>
-          <div>    <a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/AttachPortsCommand.htm'> AttachPortsCommand page</a><div>
-          <div>    <a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/DetachPortsCommand.htm'> DetachPortsCommand page</a><div>
+          <div>    <a href='http://10.126.37.131:8080/automation/html/AttachPortsCommand.htm'> AttachPortsCommand page</a><div>
+          <div>    <a href='http://10.126.37.131:8080/automation/html/DetachPortsCommand.htm'> DetachPortsCommand page</a><div>
        </td>
      </tr>
    </table>

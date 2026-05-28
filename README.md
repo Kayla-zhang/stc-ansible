@@ -1,21 +1,14 @@
 # STC Ansible
 
-This is an *experimental* [Ansible](https://www.ansible.com/) plugin to configure Spirent Test Center data models and execute tests. 
+This is an *experimental* [Ansible](https://www.ansible.com/) plugin to configure VIAVI TestCenter data models and execute tests.
 
-[![CircleCI](https://circleci.com/gh/Spirent/stc-ansible.svg?style=svg)](https://circleci.com/gh/Spirent/stc-ansible)
-[![Workflow](https://github.com/Spirent/stc-ansible/actions/workflows/python-app.yml/badge.svg)
-
-### Links
-
- * Jenkins: https://jenkins.oriondev.net/job/stc-ansible-regression-test/
+> **STC** is short for **VIAVI TestCenter**. The lowercase `stc` prefix is used throughout this module's Ansible action keywords (`stc:`), inventory groups, and configuration values.
 
 ### Requirements
 
 This STC Ansible module requires a recent version (>=2.5) of the Ansible client. 
 
-This STC Ansible module can be used to remote configure an STC Lab Server. 
-
-Configuration of STC-web is currently not supported.
+This STC Ansible module can be used to remote configure a TC LabServer. 
 
 ### Installation
 
@@ -36,7 +29,7 @@ To run all of them, just use `make play`, and it will create an STC session for 
 
 ### Inventory
 
-In your inventory (`inventory.ini`), declare the STC Lab Servers you want the Ansible playbook to connect to:
+In your inventory (`inventory.ini`), declare the TC LabServers you want the Ansible playbook to connect to:
 
 ```ini
 [labservers]
@@ -46,12 +39,12 @@ my-labserver-1 ansible_host=10.61.67.200
 ansible_connection=paramiko
 ansible_host_key_checking=no
 ansible_user=admin
-ansible_ssh_pass=spirent
+ansible_ssh_pass=viavi
 ansible_ssh_common_args=/bin/ssh
 ansible_paramiko_pty=no
 ```
 
-Note that `ansible_paramiko_pty` MUST be set to `no` as it will otherwise fail to connect to the STC Lab Server.
+Note that `ansible_paramiko_pty` MUST be set to `no` as it will otherwise fail to connect to the TC LabServer.
 
 ### Ansible STC Module
 
@@ -69,7 +62,7 @@ The `stc` Ansible module makes it possible to execute one of the following 8 act
 | attach_session | Attach to an existing session. If the session does not exisit, the script will fail.
 | delete_session | Deletes a specific session or few sessions specified.
 | delete_all_sessions | Deletes all the existing sessions.
-| load        | Loads a predefined XML data model. Note that the model must first be copied to the target STC Lab Server using the `copy` module. Check the [datamodel-loader.yaml](playbooks/datamodel-loader.yaml) playbook for reference. |
+| load        | Loads a predefined XML data model. Note that the model must first be copied to the target TC LabServer using the `copy` module. Check the [datamodel-loader.yaml](playbooks/datamodel-loader.yaml) playbook for reference. |
 | create      | Creates a new object in the data model.                                                                                                                                                                                      |
 | config      | Configures an existing object in the data model.                                                                                                                                                                             |
 | perform     | Perform a command against the data model.                                                                                                                                                                                    |
@@ -249,7 +242,7 @@ If declaring your own data model is too complex, you can also import an existing
     datamodel: /tmp/datamodel.xml
 ```
 
-Note that you must first copy the data model to the STC Lab Server before you are able to import it.
+Note that you must first copy the data model to the TC LabServer before you are able to import it.
 
 
 ### Attaching to real chassis
@@ -481,7 +474,7 @@ Last, once the test is finished, it is possible to get some results from the pro
 Debugging can be difficult when using Ansible. To make it easier to troubleshoot your playbook, you can use the STC ansible emulator. For example:
 
 ```
-./emulator.py -labserver lab-serverIP-address you-playbook.yaml
+./emulator.py -labserver labserver-IP-address you-playbook.yaml
 ```
 
 
@@ -494,8 +487,37 @@ Check the [playbook](playbooks) folder for more examples.
 
 Please check [docs](docs) folder for more detailed documentation.
 
+### Building the Documentation
+
+The full documentation is written in reStructuredText (`docs/*.rst`) and built with
+[Sphinx](https://www.sphinx-doc.org/) using the [Read the Docs theme](https://sphinx-rtd-theme.readthedocs.io/).
+
+**Install the docs build dependencies:**
+
+```sh
+pip install -r docs/requirements.txt
+```
+
+**Build the HTML site:**
+
+```sh
+# Linux / macOS
+cd docs && make html
+
+# Windows
+cd docs && make.bat html
+```
+
+The generated HTML lives in `docs/_build/html/` - open `docs/_build/html/index.html`
+in a browser to preview. Run `make clean` (or `make.bat clean`) to delete the build
+output.
+
+The repo also includes a `.readthedocs.yaml` config at the root, so the docs can be
+auto-published to [Read the Docs](https://readthedocs.org/) on every push by
+connecting the GitHub repo to a Read the Docs project.
+
 # Implementation and Design 
 
-The STC Ansible module does not connect directly to the STC Lab Server via the STC REST API. Instead, it first `ssh` into the STC Lab Server, and then uses the REST API to connect to the BLL. 
+The STC Ansible module does not connect directly to the TC LabServer via the STC REST API. Instead, it first `ssh` into the TC LabServer, and then uses the REST API to connect to the BLL. 
 
 ![System Design](docs/sysdes.png)

@@ -9,11 +9,11 @@ Overview
 --------
 
 After creating a session, STC ansible allows to configure License Server host details which 
-requires to reserve Spirent TestCenter virtual ports.
+requires to reserve VIAVI TestCenter virtual ports.
 
 Also, if declaring your own data model is too complex, you can import/load an 
 existing XML data model.
-You must first copy the data model to the STC Lab Server before you are able to import/load it.
+You must first copy the data model to the TC LabServer before you are able to import/load it.
 
 Configure License Server
 ------------------------
@@ -22,7 +22,7 @@ Purpose
 ~~~~~~~
 
 Configures the License server (virtual controller) that hosts port and feature license files. 
-License servers are only required when reserving Spirent TestCenter virtual ports.
+License servers are only required when reserving VIAVI TestCenter virtual ports.
 
 
 .. role:: mandatory
@@ -113,7 +113,7 @@ Parameters
                    <div><code>- LicenseServer: </code></div>
                    <div><code>Server: 127.0.0.1</code></div>
           <div><b>See Also:</b></div>
-          <div>    <a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/LicenseServer.htm'> LicenseServer object reference guide</a><div>
+          <div>    <a href='http://10.126.37.131:8080/automation/html/LicenseServer.htm'> LicenseServer object reference guide</a><div>
        </td>
      </tr>
    </table>
@@ -144,7 +144,7 @@ Examples
 Load Data Module
 ----------------
 
-To copy an existing XML data model to the STC Lab Server, use the following YAML code 
+To copy an existing XML data model to the TC LabServer, use the following YAML code 
 by providing source and destination paths.
 
 
@@ -156,7 +156,7 @@ by providing source and destination paths.
         src: asset/datamodel.xml
         dest: /tmp/datamodel.xml
 
-Load/import the XML datamodel to the STC Lab Server, use the following YAML task by specifying
+Load/import the XML datamodel to the TC LabServer, use the following YAML task by specifying
 the action as `load` and datamodel path.
 
 

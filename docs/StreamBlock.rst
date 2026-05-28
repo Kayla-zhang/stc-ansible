@@ -19,7 +19,7 @@ Stream blocks are associated with a port. A port traffic generator sends traffic
 by the stream blocks that are associated with the port.
 
 A stream block defines the characteristics of traffic, such as frame size, QoS parameters and traffic rate. 
-Spirent TestCenter has two types of stream blocks: bound and raw. The characteristics of both 
+VIAVI TestCenter has two types of stream blocks: bound and raw. The characteristics of both 
 bound and raw stream blocks can be configured using STC Ansible in `create` and `config` modes.
 
 A bound stream block is associated with specific source/destination endpoints (devices). 
@@ -29,7 +29,7 @@ and you want to use the addresses already specified in the stream blocks without
 When you configure devices (`Emulated Device <../docs/EmulatedDevice.rst>`_, 
 `BGP Device <../docs/BGP.rst>`_), you can specify L2, L3 and L4 address/port, VLAN tags, MPLS labels and 
 other parameters for the devices. 
-When you create a bound stream block and identify the source and destination devices, Spirent TestCenter 
+When you create a bound stream block and identify the source and destination devices, VIAVI TestCenter 
 uses the values configured for the devices to populate the frame headers. When you change device parameters, 
 such as the L2 or L3 address in a configuration that uses bound stream blocks, the stream blocks are 
 automatically updated with the change. If the values are negotiated dynamically, such as through ARP/ND, 
@@ -50,7 +50,7 @@ Create Stream Block
 Purpose
 ~~~~~~~
 
-Creates stream block object(s) in the Spirent Test Center(stc) datamodel under the project
+Creates stream block object(s) in the VIAVI TestCenter(stc) datamodel under the project
 or any created port object(s).
 During the object creation, requires to configure it's characteristics like name, Source and destination
 targets etc.
@@ -158,7 +158,7 @@ Parameters
           <div>To create stream block, use <code>StreamBlock</code> object.</div>
           <div><b>Required:</b> Yes.</div>
           <div><b>See Also:</b></div>
-          <div>    <a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/StreamBlock.htm'> StreamBlock object reference guide</a><div>
+          <div>    <a href='http://10.126.37.131:8080/automation/html/StreamBlock.htm'> StreamBlock object reference guide</a><div>
        </td>
      </tr>
    </table>
@@ -340,7 +340,7 @@ Synopsis
                    <div><code>FrameLengthMode: "FIXED"</code></div>
                    <div><code>FixedFrameLength: 256</code></div>
             <div><b>See Also:</b></div>
-          <div>    <a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/StreamBlock.htm'> StreamBlock object reference guide</a><div>
+          <div>    <a href='http://10.126.37.131:8080/automation/html/StreamBlock.htm'> StreamBlock object reference guide</a><div>
        </td>
      </tr>
    </table>
@@ -417,8 +417,8 @@ Synopsis
              Currently, supported property is "GeneratorList".</div>
             <div><b>Required:</b> No. Optional field.</div>
             <div><b>See Also:</b></div>
-          <div>    <a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/GeneratorStartCommand.htm'> GeneratorStartCommand page</a><div>
-          <div>    <a href='http://kms.spirentcom.com/CSC/pabtech/stc-automation-html/GeneratorStopCommand.htm'> GeneratorStopCommand page</a><div>
+          <div>    <a href='http://10.126.37.131:8080/automation/html/GeneratorStartCommand.htm'> GeneratorStartCommand page</a><div>
+          <div>    <a href='http://10.126.37.131:8080/automation/html/GeneratorStopCommand.htm'> GeneratorStopCommand page</a><div>
        </td>
      </tr>
    </table>
