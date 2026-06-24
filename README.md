@@ -39,7 +39,7 @@ my-labserver-1 ansible_host=10.61.67.200
 ansible_connection=paramiko
 ansible_host_key_checking=no
 ansible_user=admin
-ansible_ssh_pass=viavi
+ansible_ssh_pass=viavi123$
 ansible_ssh_common_args=/bin/ssh
 ansible_paramiko_pty=no
 ```
